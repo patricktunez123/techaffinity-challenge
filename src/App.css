@@ -2,9 +2,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
+  color: gray;
 }
 
-span {
+.app__container {
+  background: hsl(0, 0%, 0%);
+  padding: 10px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.app__container--users .user {
+  background: #15181c;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.user-details {
   display: flex;
-  padding: 0.5rem;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e4f3ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(95, 204, 95);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cc0000;
 }
